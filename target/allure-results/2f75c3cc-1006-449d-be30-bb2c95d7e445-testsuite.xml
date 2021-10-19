@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1634296661861" stop="1634296676184" version="1.4.4">
+    <name>HRMS suite</name>
+    <title>HRMS suite : Default test</title>
+    <test-cases>
+        <test-case start="1634296673455" stop="1634296675492" status="passed">
+            <name>verifyHomePageTitle</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="WKKZF-PC220"/>
+                <label name="thread" value="35164@WKKZF-PC220.TestNG"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

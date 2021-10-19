@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1634301333990" stop="1634301350975" version="1.4.4">
+    <name>Default suite</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1634301348236" stop="1634301350272" status="passed">
+            <name>verifyHomePageTitle</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="WKKZF-PC220"/>
+                <label name="thread" value="36980@WKKZF-PC220.main"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

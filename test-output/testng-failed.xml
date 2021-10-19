@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="9" guice-stage="DEVELOPMENT" name="Failed suite [HRMS suite]" parallel="tests">
+  <test name="Default test(failed)" parallel="tests">
+    <classes>
+      <class name="qa.com.testCases.HomePageTest">
+        <methods>
+          <include name="initializeEnvironment"/>
+          <include name="verifyHomePageTitle"/>
+        </methods>
+      </class> <!-- qa.com.testCases.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [HRMS suite] -->
