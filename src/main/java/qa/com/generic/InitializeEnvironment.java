@@ -7,8 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testcontainers.containers.BrowserWebDriverContainer;
-
+import org.openqa.selenium.remote.CapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -35,9 +34,10 @@ public class InitializeEnvironment{
 				options.addArguments("--incognito");
 				options.addArguments("--start-maximized");
 				options.addArguments("--window-size=1366,768");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
-				cap.setCapability(ChromeOptions.CAPABILITY, options);
-				driver=new ChromeDriver();
+				DesiredCapabilities capabilities = new DesiredCapabilities();
+				//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+				driver = new ChromeDriver(capabilities);
 				break;
 			case "firefox": 
 				WebDriverManager.firefoxdriver().setup();
@@ -48,15 +48,15 @@ public class InitializeEnvironment{
 				options.addArguments("--incognito");
 				options.addArguments("--start-maximized");
 				options.addArguments("--headless");
-				BrowserWebDriverContainer chromeContainer = new BrowserWebDriverContainer("selenium/standalone-chrome-debug");
+				/*BrowserWebDriverContainer chromeContainer = new BrowserWebDriverContainer("selenium/standalone-chrome-debug");
 				Thread.sleep(20000);
-				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-				chromeContainer = chromeContainer.withCapabilities(capabilities);
+				DesiredCapabilities capabilities1 = DesiredCapabilities.chrome();
+				capabilities1.setCapability(ChromeOptions.CAPABILITY, options);
+				chromeContainer = chromeContainer.withCapabilities(capabilities1);
 				chromeContainer.start();
 				chromeContainer.getContainerId();
 				driver = chromeContainer.getWebDriver();
-				System.out.println("Starting RemoteChrome Driver throught docker testcontainer");
+				System.out.println("Starting RemoteChrome Driver throught docker testcontainer");*/
 				break;
 			}
 			driver.manage().deleteAllCookies();

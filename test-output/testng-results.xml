@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16976" started-at="2021-10-15T12:35:33Z" finished-at="2021-10-15T12:35:50Z">
+  <suite name="Default suite" duration-ms="38175" started-at="2021-12-29T15:10:27Z" finished-at="2021-12-29T15:11:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16976" started-at="2021-10-15T12:35:33Z" finished-at="2021-10-15T12:35:50Z">
+    <test name="Default test" duration-ms="38175" started-at="2021-12-29T15:10:27Z" finished-at="2021-12-29T15:11:05Z">
       <class name="qa.com.testCases.HomePageTest">
-        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@7586beff]" name="initializeEnvironment" is-config="true" duration-ms="14230" started-at="2021-10-15T08:35:33Z" finished-at="2021-10-15T08:35:48Z">
+        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="initializeEnvironment" is-config="true" duration-ms="34560" started-at="2021-12-29T20:40:27Z" finished-at="2021-12-29T20:41:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeEnvironment -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:qa.com.testCases.HomePageTest@7586beff]" name="verifyHomePageTitle" duration-ms="2045" started-at="2021-10-15T08:35:48Z" finished-at="2021-10-15T08:35:50Z">
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="verifyHomePageTitle" duration-ms="2471" started-at="2021-12-29T20:41:02Z" finished-at="2021-12-29T20:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@7586beff]" name="tearDownEnvironment" is-config="true" duration-ms="643" started-at="2021-10-15T08:35:50Z" finished-at="2021-10-15T08:35:50Z">
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="tearDownEnvironment" is-config="true" duration-ms="990" started-at="2021-12-29T20:41:04Z" finished-at="2021-12-29T20:41:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownEnvironment -->
