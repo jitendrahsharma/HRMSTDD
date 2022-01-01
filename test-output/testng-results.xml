@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42797" started-at="2022-01-01T07:43:23Z" finished-at="2022-01-01T07:44:06Z">
+  <suite name="Default suite" duration-ms="107365" started-at="2022-01-01T12:37:26Z" finished-at="2022-01-01T12:39:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42797" started-at="2022-01-01T07:43:23Z" finished-at="2022-01-01T07:44:06Z">
-      <class name="qa.com.testCases.HomePageTest">
-        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="initializeEnvironment" is-config="true" duration-ms="39360" started-at="2022-01-01T13:13:23Z" finished-at="2022-01-01T13:14:03Z">
+    <test name="Default test" duration-ms="107365" started-at="2022-01-01T12:37:26Z" finished-at="2022-01-01T12:39:13Z">
+      <class name="qa.com.testCases.AddCandidatesTest">
+        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:qa.com.testCases.AddCandidatesTest@66f1f5]" name="initializeEnvironment" is-config="true" duration-ms="20113" started-at="2022-01-01T18:07:26Z" finished-at="2022-01-01T18:07:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeEnvironment -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="verifyHomePageTitle" duration-ms="2469" started-at="2022-01-01T13:14:03Z" finished-at="2022-01-01T13:14:05Z">
+        <test-method status="FAIL" signature="addCandidate()[pri:0, instance:qa.com.testCases.AddCandidatesTest@66f1f5]" name="addCandidate" duration-ms="78301" started-at="2022-01-01T18:07:46Z" finished-at="2022-01-01T18:09:04Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at qa.com.generic.WrapperFunctions.selectDateFromDatePicker(WrapperFunctions.java:55)
+	at qa.com.pages.CandidatesPage.selectDate(CandidatesPage.java:134)
+	at qa.com.testCases.AddCandidatesTest.addCandidate(AddCandidatesTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:qa.com.testCases.HomePageTest@503868]" name="tearDownEnvironment" is-config="true" duration-ms="928" started-at="2022-01-01T13:14:05Z" finished-at="2022-01-01T13:14:06Z">
+        </test-method> <!-- addCandidate -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:qa.com.testCases.AddCandidatesTest@66f1f5]" name="tearDownEnvironment" is-config="true" duration-ms="2018" started-at="2022-01-01T18:09:04Z" finished-at="2022-01-01T18:09:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownEnvironment -->
-      </class> <!-- qa.com.testCases.HomePageTest -->
+      </class> <!-- qa.com.testCases.AddCandidatesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

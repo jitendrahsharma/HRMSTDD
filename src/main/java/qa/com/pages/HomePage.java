@@ -44,7 +44,7 @@ public class HomePage extends TestBase{
 		}
 	}
 	
-	public boolean homeScreenDisplayed() throws InterruptedException{
+	public boolean homeScreenDisplayed(){
 		objWrapperFunctions.waitFor(2);
 		return lblHomePage.isDisplayed();
 	 }

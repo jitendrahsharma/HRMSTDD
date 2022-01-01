@@ -29,7 +29,7 @@ public HomePageTest ()
 
 	
 	@Test
-	public void verifyHomePageTitle() throws InterruptedException{
+	public void verifyHomePageTitle(){
 		objHomePage.homeScreenDisplayed();
 	}
 	
